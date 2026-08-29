@@ -146,55 +146,6 @@ button.on{border-color:var(--aqua);color:#B9F0ED}
 }
 
 /* ---------- editor ---------- */
-.fab{
-  position:fixed;right:16px;bottom:16px;z-index:40;
-  border-radius:24px;padding:12px 18px;background:var(--orange);color:#12161C;
-  border:0;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.45);
-}
-.sheet{
-  position:fixed;inset:0;z-index:50;display:none;
-  background:rgba(6,8,11,.66);
-}
-.sheet.open{display:block}
-.sheet-in{
-  position:absolute;left:0;right:0;bottom:0;max-height:88vh;overflow-y:auto;
-  background:var(--ink);border-top:1px solid var(--rule);
-  border-radius:14px 14px 0 0;padding:16px 18px 34px;
-}
-@media(min-width:760px){.sheet-in{max-width:680px;margin:0 auto;border-radius:14px;bottom:24px;left:24px;right:24px}}
-.sheet-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-.sheet-h strong{font-family:var(--disp);font-size:19px;letter-spacing:.01em}
-.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:16px}
-.tab{background:var(--panel);}
-.tab.sel{border-color:var(--aqua);color:#B9F0ED}
-.pane{display:none}
-.pane.sel{display:block}
-label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--fg-dim);margin:12px 0 5px}
-input[type=text],input[type=url],textarea{
-  width:100%;background:var(--panel);color:var(--fg);border:1px solid var(--rule);
-  border-radius:7px;padding:11px 12px;font-family:var(--body);font-size:15px;
-}
-textarea{min-height:96px;resize:vertical;line-height:1.55}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
-.plist{margin-top:6px}
-.pitem{
-  display:flex;align-items:center;gap:10px;border:1px solid var(--rule);
-  border-radius:8px;padding:9px 10px;margin-bottom:7px;background:var(--panel);
-}
-.pitem .dot{width:9px;height:9px;border-radius:2px;flex:none}
-.pitem .nm{flex:1;font-size:14.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pitem button{padding:7px 9px;min-height:36px;font-size:11px}
-.thumb{width:100%;max-height:150px;object-fit:cover;border-radius:7px;border:1px solid var(--rule);margin-top:8px;display:none}
-.note{font-family:var(--mono);font-size:11.5px;line-height:1.7;color:var(--fg-dim);margin:14px 0 0}
-.note b{color:var(--fg);font-weight:500}
-.toast{
-  position:fixed;left:50%;transform:translateX(-50%);bottom:82px;z-index:60;
-  background:var(--panel2);border:1px solid var(--rule);border-radius:8px;
-  padding:10px 15px;font-family:var(--mono);font-size:12px;color:var(--fg);
-  opacity:0;pointer-events:none;transition:opacity .2s;
-}
-.toast.show{opacity:1}
 .foot{
   margin-top:52px;border-top:1px solid var(--rule);padding:16px 0 8px;
   font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:#3D4552;
@@ -258,85 +209,6 @@ textarea{min-height:96px;resize:vertical;line-height:1.55}
   <p class="foot" id="v-foot"></p>
 </main>
 
-<button class="fab" id="fab" hidden>Edit page</button>
-
-<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Edit page">
-  <div class="sheet-in">
-    <div class="sheet-h">
-      <strong>Edit page</strong>
-      <button id="b-close" style="padding:8px 12px;min-height:38px">Close</button>
-    </div>
-
-    <div class="tabs">
-      <button class="tab sel" data-pane="about">About</button>
-      <button class="tab" data-pane="projects">Projects</button>
-      <button class="tab" data-pane="publish">Publish</button>
-    </div>
-
-    <div class="pane sel" id="pane-about">
-      <label for="f-name">Name</label>
-      <input id="f-name" type="text" autocomplete="off">
-      <label for="f-role">Role</label>
-      <input id="f-role" type="text" autocomplete="off">
-      <label for="f-loc">Location</label>
-      <input id="f-loc" type="text" autocomplete="off">
-      <label for="f-bio">About</label>
-      <textarea id="f-bio"></textarea>
-      <label for="f-gh">GitHub URL</label>
-      <input id="f-gh" type="url" inputmode="url" autocomplete="off" placeholder="https://github.com/…">
-      <label for="f-extra">Extra link (optional, label | url)</label>
-      <input id="f-extra" type="text" autocomplete="off" placeholder="Email | mailto:you@example.com">
-      <div class="row">
-        <button id="b-save-about" class="hot">Save about</button>
-        <button id="b-reset-about">Undo changes</button>
-      </div>
-    </div>
-
-    <div class="pane" id="pane-projects">
-      <div class="plist" id="f-list"></div>
-
-      <label for="f-title">Project name</label>
-      <input id="f-title" type="text" autocomplete="off">
-      <label for="f-desc">What it does</label>
-      <textarea id="f-desc" style="min-height:74px"></textarea>
-      <label for="f-url">Link</label>
-      <input id="f-url" type="url" inputmode="url" autocomplete="off" placeholder="https://github.com/…">
-      <div class="row">
-        <button id="b-add" class="hot">Add project</button>
-        <button id="b-clear">Clear form</button>
-      </div>
-    </div>
-
-    <div class="pane" id="pane-publish">
-      <p class="note">Your edits live in this browser only. To publish them: <b>Download data.js</b>, then in the repository use <b>Add file → Upload files</b> and drop it in. Same name, same folder — it replaces the old one.</p>
-      <label for="f-json">Page data</label>
-      <textarea id="f-json" style="min-height:190px;font-family:var(--mono);font-size:12px"></textarea>
-      <div class="row">
-        <button id="b-copy">Copy data</button>
-        <button id="b-load">Load pasted data</button>
-      </div>
-      <div class="row">
-        <button id="b-drop">Drop local edits</button>
-        <button id="b-download" class="hot">Download data.js</button>
-      </div>
-      <p class="note">Drop local edits throws away everything saved in this browser and shows what data.js says. Use it after publishing, to check the upload worked.</p>
-    </div>
-  </div>
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script src="data.js"></script>
-<script>
-if(typeof PAGE==='undefined'){
-  var PAGE={
-    "name":"Shumtugle","role":"Vibecoding","location":"Helsinki",
-    "bio":"data.js is missing, so this is the built-in fallback. Upload data.js next to index.html and the real content comes back.",
-    "github":"https://github.com/Shumtugle","extra":"","projects":[]
-  };
-}
-</script>
-
 <script>
 (function(){
 'use strict';
@@ -345,72 +217,82 @@ var FIBER=[
   ['Slate','#7C8794'],['White','#E8EAEE'],['Red','#E04B4B'],['Black','#5A6270'],
   ['Yellow','#E3C23C'],['Violet','#8B6FE0'],['Rose','#E2607F'],['Aqua','#3FC7C0']
 ];
-var KEY='fns-page-v1';
-var FILE=JSON.parse(JSON.stringify(PAGE));
-var data=load();
-var editing=-1;
+var FALLBACK=
+  'NAME: Shumtugle\nROLE: Vibecoding\nLOCATION: Helsinki\n'+
+  'GITHUB: https://github.com/Shumtugle\n---\n'+
+  'page.txt did not load. Served from GitHub Pages it will; opened as a bare file it will not.';
 
-function load(){
-  try{
-    var raw=localStorage.getItem(KEY);
-    if(raw)return JSON.parse(raw);
-  }catch(e){}
-  return JSON.parse(JSON.stringify(FILE));
+function parse(raw){
+  var blocks=raw.replace(/\r/g,'').split(/^===\s*$/m);
+  function head(b){
+    var i=b.indexOf('\n---'),h=i<0?b:b.slice(0,i),body=i<0?'':b.slice(i+4);
+    var out={links:[],body:body.replace(/^\n+/,'').replace(/\s+$/,'')};
+    h.split('\n').forEach(function(ln){
+      var m=ln.match(/^([A-Z]+):\s*(.*)$/);
+      if(!m)return;
+      if(m[1]==='LINK'){
+        var q=m[2].split('|');
+        if(q.length>1)out.links.push({label:q[0].trim(),url:q[1].trim()});
+      }else out[m[1].toLowerCase()]=m[2].trim();
+    });
+    return out;
+  }
+  var about=head(blocks[0]||'');
+  var projects=[];
+  for(var i=1;i<blocks.length;i++){
+    var b=head(blocks[i]);
+    if(b.title)projects.push(b);
+  }
+  return {about:about,projects:projects};
 }
-function save(){
-  try{localStorage.setItem(KEY,JSON.stringify(data));}
-  catch(e){toast('Saved for this session only — storage is blocked here');}
-}
-function toast(msg){
-  var t=document.getElementById('toast');
-  t.textContent=msg;t.classList.add('show');
-  clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('show');},2200);
-}
-function esc(s){return String(s==null?'':s);}
 
-function render(){
-  document.getElementById('v-name').textContent=esc(data.name)||'Your name';
-  document.getElementById('v-role').childNodes[0].nodeValue=(esc(data.role)||'Your role')+' ';
-  document.getElementById('v-loc').textContent=data.location?('· '+data.location):'';
-  document.getElementById('v-bio').textContent=esc(data.bio);
-  document.title=(esc(data.name)||'Page')+' — '+(esc(data.role)||'');
+function paragraphs(el,text){
+  el.innerHTML='';
+  text.split(/\n\s*\n/).forEach(function(t){
+    if(!t.trim())return;
+    var p=document.createElement('p');
+    p.className='bio';p.textContent=t.trim();
+    el.appendChild(p);
+  });
+}
+
+function render(d){
+  var a=d.about;
+  document.getElementById('v-name').textContent=a.name||'Untitled';
+  document.getElementById('v-role').childNodes[0].nodeValue=(a.role||'')+' ';
+  document.getElementById('v-loc').textContent=a.location?('· '+a.location):'';
+  document.title=(a.name||'Page')+(a.location?(' — '+a.location):'');
+  paragraphs(document.getElementById('v-bio'),a.body||'');
 
   var L=document.getElementById('v-links');
   L.innerHTML='';
-  if(data.github){
-    var a=document.createElement('a');
-    a.href=data.github;a.textContent='GitHub';a.rel='noopener';
-    L.appendChild(a);
-  }
-  if(data.extra&&data.extra.indexOf('|')>0){
-    var parts=data.extra.split('|');
-    var b=document.createElement('a');
-    b.href=parts[1].trim();b.textContent=parts[0].trim();b.rel='noopener';
-    L.appendChild(b);
-  }
+  if(a.github)a.links.unshift({label:'GitHub',url:a.github});
+  a.links.forEach(function(l){
+    var x=document.createElement('a');
+    x.href=l.url;x.textContent=l.label;x.rel='noopener';
+    L.appendChild(x);
+  });
 
   var g=document.getElementById('v-grid');
   g.innerHTML='';
-  var ps=data.projects||[];
-  document.getElementById('v-count').textContent=ps.length?String(ps.length).padStart(2,'0'):'';
-  if(!ps.length){
+  document.getElementById('v-count').textContent=
+    d.projects.length?String(d.projects.length).padStart(2,'0'):'';
+  if(!d.projects.length){
     var e=document.createElement('div');
     e.className='empty';
-    e.textContent='No projects listed yet. Open Edit page and add the first one.';
+    e.textContent='Nothing listed yet. Add a block to page.txt.';
     g.appendChild(e);
   }
-  ps.forEach(function(p,i){
+  d.projects.forEach(function(p,i){
     var f=FIBER[i%12];
     var c=document.createElement('article');
-    c.className='card';
-    c.style.borderLeftColor=f[1];
+    c.className='card';c.style.borderLeftColor=f[1];
     var idx=document.createElement('div');
-    idx.className='idx';
-    idx.textContent='Fiber '+String(i+1).padStart(2,'0')+' · '+f[0];
-    idx.style.color=f[1];
-    var h=document.createElement('h4');h.textContent=esc(p.title)||'Untitled';
-    var d=document.createElement('p');d.textContent=esc(p.desc);
-    c.appendChild(idx);c.appendChild(h);c.appendChild(d);
+    idx.className='idx';idx.style.color=f[1];
+    idx.textContent='Fiber '+String(i+1).padStart(2,'0')+' · '+f[0]+(p.meta?(' · '+p.meta):'');
+    var h=document.createElement('h4');h.textContent=p.title;
+    var t=document.createElement('p');t.textContent=p.body||'';
+    c.appendChild(idx);c.appendChild(h);c.appendChild(t);
     if(p.url){
       var go=document.createElement('a');
       go.className='go';go.href=p.url;go.rel='noopener';
@@ -421,152 +303,13 @@ function render(){
   });
 
   document.getElementById('v-foot').textContent=
-    (esc(data.name)||'')+' · '+new Date().getFullYear();
-  fillForms();
+    (a.name||'')+' · '+new Date().getFullYear();
 }
 
-function fillForms(){
-  document.getElementById('f-name').value=esc(data.name);
-  document.getElementById('f-role').value=esc(data.role);
-  document.getElementById('f-loc').value=esc(data.location);
-  document.getElementById('f-bio').value=esc(data.bio);
-  document.getElementById('f-gh').value=esc(data.github);
-  document.getElementById('f-extra').value=esc(data.extra);
-  document.getElementById('f-json').value=JSON.stringify(data,null,2);
-  var list=document.getElementById('f-list');
-  list.innerHTML='';
-  (data.projects||[]).forEach(function(p,i){
-    var f=FIBER[i%12];
-    var row=document.createElement('div');
-    row.className='pitem';
-    var dot=document.createElement('span');
-    dot.className='dot';dot.style.background=f[1];
-    var nm=document.createElement('span');
-    nm.className='nm';nm.textContent=esc(p.title)||'Untitled';
-    var up=document.createElement('button');
-    up.textContent='↑';up.setAttribute('aria-label','Move '+esc(p.title)+' up');
-    up.onclick=function(){
-      if(i===0)return;
-      var t=data.projects[i-1];data.projects[i-1]=data.projects[i];data.projects[i]=t;
-      save();render();
-    };
-    var ed=document.createElement('button');
-    ed.textContent='Edit';
-    ed.onclick=function(){
-      editing=i;
-      document.getElementById('f-title').value=esc(p.title);
-      document.getElementById('f-desc').value=esc(p.desc);
-      document.getElementById('f-url').value=esc(p.url);
-      document.getElementById('b-add').textContent='Save project';
-      toast('Editing '+(esc(p.title)||'project'));
-    };
-    var rm=document.createElement('button');
-    rm.textContent='Delete';
-    rm.onclick=function(){
-      data.projects.splice(i,1);
-      if(editing===i)clearForm();
-      save();render();toast('Deleted');
-    };
-    row.appendChild(dot);row.appendChild(nm);row.appendChild(up);row.appendChild(ed);row.appendChild(rm);
-    list.appendChild(row);
-  });
-}
-function clearForm(){
-  editing=-1;
-  ['f-title','f-desc','f-url'].forEach(function(id){document.getElementById(id).value='';});
-  document.getElementById('b-add').textContent='Add project';
-}
-
-/* ---- sheet ---- */
-var sheet=document.getElementById('sheet');
-var fab=document.getElementById('fab');
-function gate(){
-  var on=location.hash==='#edit';
-  fab.hidden=!on;
-  if(!on)sheet.classList.remove('open');
-}
-window.addEventListener('hashchange',gate);
-gate();
-fab.onclick=function(){sheet.classList.add('open');};
-document.getElementById('b-close').onclick=function(){sheet.classList.remove('open');};
-sheet.addEventListener('click',function(e){if(e.target===sheet)sheet.classList.remove('open');});
-document.addEventListener('keydown',function(e){if(e.key==='Escape')sheet.classList.remove('open');});
-
-Array.prototype.forEach.call(document.querySelectorAll('.tab'),function(t){
-  t.onclick=function(){
-    Array.prototype.forEach.call(document.querySelectorAll('.tab'),function(x){x.classList.remove('sel');});
-    Array.prototype.forEach.call(document.querySelectorAll('.pane'),function(x){x.classList.remove('sel');});
-    t.classList.add('sel');
-    document.getElementById('pane-'+t.getAttribute('data-pane')).classList.add('sel');
-  };
-});
-
-document.getElementById('b-save-about').onclick=function(){
-  data.name=document.getElementById('f-name').value.trim();
-  data.role=document.getElementById('f-role').value.trim();
-  data.location=document.getElementById('f-loc').value.trim();
-  data.bio=document.getElementById('f-bio').value;
-  data.github=document.getElementById('f-gh').value.trim();
-  data.extra=document.getElementById('f-extra').value.trim();
-  save();render();toast('About saved');
-};
-document.getElementById('b-reset-about').onclick=function(){fillForms();toast('Form reset');};
-
-document.getElementById('b-add').onclick=function(){
-  var t=document.getElementById('f-title').value.trim();
-  if(!t){toast('A project needs a name');return;}
-  var p={
-    title:t,
-    desc:document.getElementById('f-desc').value.trim(),
-    url:document.getElementById('f-url').value.trim()
-  };
-  if(!data.projects)data.projects=[];
-  if(editing>=0){data.projects[editing]=p;toast('Project saved');}
-  else{data.projects.push(p);toast('Project added');}
-  clearForm();save();render();
-};
-document.getElementById('b-clear').onclick=function(){clearForm();};
-
-document.getElementById('b-copy').onclick=function(){
-  var box=document.getElementById('f-json');
-  var text='var PAGE = '+JSON.stringify(data,null,2)+';';
-  box.value=text;
-  box.select();
-  if(navigator.clipboard&&navigator.clipboard.writeText){
-    navigator.clipboard.writeText(text).then(function(){toast('Copied — paste it into index.html');},
-      function(){toast('Select the text and copy it by hand');});
-  }else{
-    try{document.execCommand('copy');toast('Copied — paste it into index.html');}
-    catch(e){toast('Select the text and copy it by hand');}
-  }
-};
-document.getElementById('b-load').onclick=function(){
-  var raw=document.getElementById('f-json').value.trim();
-  raw=raw.replace(/^var\s+PAGE\s*=\s*/,'').replace(/;\s*$/,'');
-  try{
-    var obj=JSON.parse(raw);
-    if(!obj||typeof obj!=='object')throw new Error('bad');
-    data=obj;if(!data.projects)data.projects=[];
-    save();render();toast('Data loaded');
-  }catch(e){toast('That is not valid page data');}
-};
-document.getElementById('b-drop').onclick=function(){
-  try{localStorage.removeItem(KEY);}catch(e){}
-  data=JSON.parse(JSON.stringify(FILE));
-  render();toast('Back to what the file says');
-};
-document.getElementById('b-download').onclick=function(){
-  var body='/* Page content for shumtugle.github.io\n'+
-    '   Replace this whole file with the one the Publish tab gives you. */\n\n'+
-    'var PAGE = '+JSON.stringify(data,null,2)+';\n';
-  var blob=new Blob([body],{type:'text/javascript'});
-  var a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);a.download='data.js';
-  document.body.appendChild(a);a.click();
-  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},400);
-};
-
-render();
+fetch('page.txt',{cache:'no-cache'})
+  .then(function(r){if(!r.ok)throw new Error(r.status);return r.text();})
+  .then(function(t){render(parse(t));})
+  .catch(function(){render(parse(FALLBACK));});
 })();
 </script>
 

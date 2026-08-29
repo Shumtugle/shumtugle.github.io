@@ -1,0 +1,27 @@
+NAME: Shumtugle
+ROLE: Vibecoding
+LOCATION: Helsinki
+GITHUB: https://github.com/Shumtugle
+---
+Vibecoding is the hobby: describe the thing, let the model write it, then argue with the result until it behaves. Half the work is knowing what to ask for. The other half is refusing the first answer.
+
+What survives that argument ends up here.
+===
+TITLE: Hazna
+META: android · game
+URL: https://shumtugle.github.io/hazna/
+---
+A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
+===
+TITLE: Hark
+META: android · v1.9.0
+URL: https://shumtugle.github.io/hark/
+---
+A player for long recordings — lectures, audiobooks, talks. It opens a folder rather than a library, and keeps your position in every file separately.
+===
+TITLE: Meno
+META: android · v1.9.11
+URL: https://shumtugle.github.io/meno/
+---
+A glass card for the home screen: analog clock, time, date, weather, battery. Written as hand-authored smali, with no Android Studio and no Gradle anywhere in the build.
+===
