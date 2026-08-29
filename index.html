@@ -258,7 +258,7 @@ textarea{min-height:96px;resize:vertical;line-height:1.55}
   <p class="foot" id="v-foot"></p>
 </main>
 
-<button class="fab" id="fab">Edit page</button>
+<button class="fab" id="fab" hidden>Edit page</button>
 
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Edit page">
   <div class="sheet-in">
@@ -308,47 +308,33 @@ textarea{min-height:96px;resize:vertical;line-height:1.55}
     </div>
 
     <div class="pane" id="pane-publish">
-      <p class="note">Your edits live in this browser only. To put them on the real site, copy the block below and paste it into <b>index.html</b>, replacing everything between <b>PAGE DATA START</b> and <b>PAGE DATA END</b>.</p>
+      <p class="note">Your edits live in this browser only. To publish them: <b>Download data.js</b>, then in the repository use <b>Add file → Upload files</b> and drop it in. Same name, same folder — it replaces the old one.</p>
       <label for="f-json">Page data</label>
       <textarea id="f-json" style="min-height:190px;font-family:var(--mono);font-size:12px"></textarea>
       <div class="row">
-        <button id="b-copy" class="hot">Copy data</button>
+        <button id="b-copy">Copy data</button>
         <button id="b-load">Load pasted data</button>
       </div>
       <div class="row">
         <button id="b-drop">Drop local edits</button>
-        <button id="b-download">Download data.json</button>
+        <button id="b-download" class="hot">Download data.js</button>
       </div>
-      <p class="note">Drop local edits throws away everything saved in this browser and shows what is written in the file itself. Use it after you have published.</p>
+      <p class="note">Drop local edits throws away everything saved in this browser and shows what data.js says. Use it after publishing, to check the upload worked.</p>
     </div>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
+<script src="data.js"></script>
 <script>
-/* ===================== PAGE DATA START ===================== */
-var PAGE = {
-  "name": "Shumtugle",
-  "role": "Vibecoding",
-  "location": "Helsinki",
-  "bio": "Vibecoding is the hobby: describe the thing, let the model write it, then argue with the result until it behaves. Half the work is knowing what to ask for. The other half is refusing the first answer.\n\nWhat survives that argument ends up here.",
-  "github": "https://github.com/Shumtugle",
-  "extra": "",
-  "projects": [
-    {
-      "title": "Hark",
-      "desc": "An Android player for long recordings kept in one folder. Made because every other player wanted to organise my files for me.",
-      "url": "https://github.com/Shumtugle"
-    },
-    {
-      "title": "Jot",
-      "desc": "An Android photo annotator: open a picture, mark what matters, send it on. Built for notes, not for scrapbooking.",
-      "url": "https://github.com/Shumtugle"
-    }
-  ]
-};
-/* ====================== PAGE DATA END ====================== */
+if(typeof PAGE==='undefined'){
+  var PAGE={
+    "name":"Shumtugle","role":"Vibecoding","location":"Helsinki",
+    "bio":"data.js is missing, so this is the built-in fallback. Upload data.js next to index.html and the real content comes back.",
+    "github":"https://github.com/Shumtugle","extra":"","projects":[]
+  };
+}
 </script>
 
 <script>
@@ -493,7 +479,15 @@ function clearForm(){
 
 /* ---- sheet ---- */
 var sheet=document.getElementById('sheet');
-document.getElementById('fab').onclick=function(){sheet.classList.add('open');};
+var fab=document.getElementById('fab');
+function gate(){
+  var on=location.hash==='#edit';
+  fab.hidden=!on;
+  if(!on)sheet.classList.remove('open');
+}
+window.addEventListener('hashchange',gate);
+gate();
+fab.onclick=function(){sheet.classList.add('open');};
 document.getElementById('b-close').onclick=function(){sheet.classList.remove('open');};
 sheet.addEventListener('click',function(e){if(e.target===sheet)sheet.classList.remove('open');});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')sheet.classList.remove('open');});
@@ -562,9 +556,12 @@ document.getElementById('b-drop').onclick=function(){
   render();toast('Back to what the file says');
 };
 document.getElementById('b-download').onclick=function(){
-  var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  var body='/* Page content for shumtugle.github.io\n'+
+    '   Replace this whole file with the one the Publish tab gives you. */\n\n'+
+    'var PAGE = '+JSON.stringify(data,null,2)+';\n';
+  var blob=new Blob([body],{type:'text/javascript'});
   var a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);a.download='data.json';
+  a.href=URL.createObjectURL(blob);a.download='data.js';
   document.body.appendChild(a);a.click();
   setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},400);
 };
