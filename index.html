@@ -318,7 +318,20 @@ fetch('page.txt',{cache:'no-cache'})
 'use strict';
 var cv=document.getElementById('game'),ctx=cv.getContext('2d');
 var W=360,H=190,dpr=Math.min(window.devicePixelRatio||1,2);
-cv.width=W*dpr;cv.height=H*dpr;cv.style.height=H+'px';ctx.scale(dpr,dpr);
+function fit(){
+  var w=Math.round(cv.clientWidth||(cv.parentNode&&cv.parentNode.clientWidth)||360);
+  w=Math.max(280,Math.min(1100,w));
+  if(w===W&&cv.width===Math.round(W*dpr))return;
+  W=w;
+  cv.width=Math.round(W*dpr);
+  cv.height=Math.round(H*dpr);
+  cv.style.height=H+'px';
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+fit();
+window.addEventListener('resize',fit);
+window.addEventListener('orientationchange',function(){setTimeout(fit,200);});
+setTimeout(fit,300);
 
 var INK='#10151C',SURF='#1A212A',LINE='#39424F',TXT='#E4E7EB',DIM='#6E7887',
     OK='#2FA84F',WARN='#E3A13C',BAD='#D93A2B',ACC='#3FC7C0',RED='#D93A2B';

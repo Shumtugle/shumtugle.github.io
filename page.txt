@@ -14,10 +14,10 @@ URL: https://shumtugle.github.io/hazna/
 A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
 ===
 TITLE: Hark
-META: android · v1.9.0
+META: android · v2.9.7
 URL: https://shumtugle.github.io/hark/
 ---
-A player for long recordings — lectures, audiobooks, talks. It opens a folder rather than a library, and keeps your position in every file separately.
+A player for long recordings — lectures, audiobooks, talks. It opens a folder rather than a library, and keeps your position in every file separately. In 2.9.7 the home-screen widget was rebuilt as one piece: cover on the right, everything else sized around it instead of against a measured margin.
 ===
 TITLE: Meno
 META: android · v1.9.11
@@ -25,3 +25,8 @@ URL: https://shumtugle.github.io/meno/
 ---
 A glass card for the home screen: analog clock, time, date, weather, battery. Written as hand-authored smali, with no Android Studio and no Gradle anywhere in the build.
 ===
+TITLE: Marginalia
+META: web · reader
+URL: https://shumtugle.github.io/Marginalia/
+---
+A site shaped like a book: the pages turn, and some of them read themselves aloud. A new title arrives as a text file dropped in a folder.
