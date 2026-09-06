@@ -30,3 +30,9 @@ META: web · reader
 URL: https://shumtugle.github.io/Marginalia/
 ---
 A site shaped like a book: the pages turn, and some of them read themselves aloud. A new title arrives as a text file dropped in a folder.
+===
+TITLE: Jot
+META: android · v3.327.0
+URL: https://shumtugle.github.io/jot/
+---
+A photo annotator that treats the picture as rubber: a stroke, a caption, a shape all lie on the same sheet and stretch with it. Mirror the sheet and the caption mirrors too — unreadable is the answer, not a defect.
