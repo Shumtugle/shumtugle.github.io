@@ -25,14 +25,9 @@ URL: https://shumtugle.github.io/meno/
 ---
 A glass card for the home screen: analog clock, time, date, weather, battery. Written as hand-authored smali, with no Android Studio and no Gradle anywhere in the build.
 ===
-TITLE: Marginalia
-META: web · reader
-URL: https://shumtugle.github.io/Marginalia/
----
-A site shaped like a book: the pages turn, and some of them read themselves aloud. A new title arrives as a text file dropped in a folder.
-===
 TITLE: Jot
 META: android · v3.327.0
 URL: https://shumtugle.github.io/jot/
 ---
-A photo annotator that treats the picture as rubber: a stroke, a caption, a shape all lie on the same sheet and stretch with it. Mirror the sheet and the caption mirrors too — unreadable is the answer, not a defect.
+A small image editor that gets real work done.
+Jot is a compact Android editor for quick image work: draw, crop, add text and shapes, adjust colour, apply filters, remove parts of an image, combine pictures, and save the result.
