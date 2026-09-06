@@ -7,12 +7,6 @@ Vibecoding is the hobby: describe the thing, let the model write it, then argue 
 
 What survives that argument ends up here.
 ===
-TITLE: Hazna
-META: android · game
-URL: https://shumtugle.github.io/hazna/
----
-A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
-===
 TITLE: Hark
 META: android · v2.9.7
 URL: https://shumtugle.github.io/hark/
@@ -20,7 +14,7 @@ URL: https://shumtugle.github.io/hark/
 A player for long recordings — lectures, audiobooks, talks. It opens a folder rather than a library, and keeps your position in every file separately. In 2.9.7 the home-screen widget was rebuilt as one piece: cover on the right, everything else sized around it instead of against a measured margin.
 ===
 TITLE: Meno
-META: android · v1.9.11
+META: android · v1.9.12
 URL: https://shumtugle.github.io/meno/
 ---
 A glass card for the home screen: analog clock, time, date, weather, battery. Written as hand-authored smali, with no Android Studio and no Gradle anywhere in the build.
@@ -31,3 +25,10 @@ URL: https://shumtugle.github.io/jot/
 ---
 A small image editor that gets real work done.
 Jot is a compact Android editor for quick image work: draw, crop, add text and shapes, adjust colour, apply filters, remove parts of an image, combine pictures, and save the result.
+===
+TITLE: Hazna
+META: android · game
+URL: https://shumtugle.github.io/hazna/
+---
+A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
+
