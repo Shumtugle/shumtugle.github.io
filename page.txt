@@ -26,6 +26,12 @@ URL: https://shumtugle.github.io/jot/
 A small image editor that gets real work done.
 Jot is a compact Android editor for quick image work: draw, crop, add text and shapes, adjust colour, apply filters, remove parts of an image, combine pictures, and save the result.
 ===
+TITLE: Saule
+META: android . browser
+URL: https://shumtugle.github.io/saule/
+---
+An Android browser that forgets by default and agrees to remember only where you say so, one site at a time.
+===
 TITLE: Hazna
 META: android · game
 URL: https://shumtugle.github.io/hazna/
