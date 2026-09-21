@@ -26,11 +26,23 @@ URL: https://shumtugle.github.io/jot/
 A small image editor that gets real work done.
 Jot is a compact Android editor for quick image work: draw, crop, add text and shapes, adjust colour, apply filters, remove parts of an image, combine pictures, and save the result.
 ===
+TITLE: Nixie
+META: android . browser
+URL: https://shumtugle.github.io/nixie/
+---
+А small Android browser, built with the platform and nothing else. Nixie draws pages with the Android System WebView and builds its own window around it: one bar, one button, and screens of its own for everything a browser keeps.
+===
 TITLE: Saule
 META: android . browser
 URL: https://shumtugle.github.io/saule/
 ---
 An Android browser that forgets by default and agrees to remember only where you say so, one site at a time.
+===
+TITLE: Fama
+META: аndroid . board of meetings
+URL: https://shumtugle.github.io/fama/
+---
+One board for meetings announced in many channels. Share a channel to Fama once, and whatever it announces stands on one board, by day and by hour, with the book and the place.
 ===
 TITLE: Hazna
 META: android · game
