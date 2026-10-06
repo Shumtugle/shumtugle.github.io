@@ -27,19 +27,19 @@ A small image editor that gets real work done.
 Jot is a compact Android editor for quick image work: draw, crop, add text and shapes, adjust colour, apply filters, remove parts of an image, combine pictures, and save the result.
 ===
 TITLE: Nixie
-META: android . browser
+META: android · browser
 URL: https://shumtugle.github.io/nixie/
 ---
-А small Android browser, built with the platform and nothing else. Nixie draws pages with the Android System WebView and builds its own window around it: one bar, one button, and screens of its own for everything a browser keeps.
+A small Android browser, built with the platform and nothing else. Nixie draws pages with the Android System WebView and builds its own window around it: one bar, one button, and screens of its own for everything a browser keeps.
 ===
 TITLE: Saule
-META: android . browser
+META: android · browser
 URL: https://shumtugle.github.io/saule/
 ---
 An Android browser that forgets by default and agrees to remember only where you say so, one site at a time.
 ===
 TITLE: Fama
-META: аndroid . board of meetings
+META: android · board of meetings
 URL: https://shumtugle.github.io/fama/
 ---
 One board for meetings announced in many channels. Share a channel to Fama once, and whatever it announces stands on one board, by day and by hour, with the book and the place.
@@ -49,7 +49,6 @@ META: android · game
 URL: https://shumtugle.github.io/hazna/
 ---
 A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
-
 ===
 TITLE: Scoorohot'78
 META: android · game · v1.2
@@ -62,3 +61,9 @@ META: android · home screen · v2.18.3
 URL: https://shumtugle.github.io/ellipse/
 ---
 A home screen for Android that is also a workshop: icons cut from wood, steel, silk and glass, ten clock faces, a wallpaper factory, and a status strip of its own. Built and rebuilt 213 times in two weeks, in conversation.
+===
+TITLE: Clepsydra
+META: android · game · v1.01
+URL: https://shumtugle.github.io/clepsydra/
+---
+A round glass flask with a maze inside. Rain falls into the neck; turn the flask with one finger and let the water out of the bottom in one long pour. Every flask is a new maze, and some keep a trouble or two: bubbles to pop or to keep, pearls that open into flowers across the way, a float, a clock, snow, lava.
