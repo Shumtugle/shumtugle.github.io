@@ -50,3 +50,9 @@ URL: https://shumtugle.github.io/hazna/
 ---
 A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
 
+===
+TITLE: Scoorohot'78
+META: android · game · v1.2
+URL: https://shumtugle.github.io/scoorohot/
+---
+A retro racing game on a road that never ends and is never the same twice: seven countries, traffic both ways, forks, police, weather, night. Everything you see and hear is made by the game itself. A finger on the screen drives; slide to steer, drag down to brake.
