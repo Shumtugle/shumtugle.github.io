@@ -67,3 +67,9 @@ META: android · game · v1.01
 URL: https://shumtugle.github.io/clepsydra/
 ---
 A round glass flask with a maze inside. Rain falls into the neck; turn the flask with one finger and let the water out of the bottom in one long pour. Every flask is a new maze, and some keep a trouble or two: bubbles to pop or to keep, pearls that open into flowers across the way, a float, a clock, snow, lava.
+===
+TITLE: Cat Piano
+META: android · music · v1.04
+URL: https://shumtugle.github.io/catpiano/
+---
+A cat, a panda, a fox and a small dinosaur take turns at the keys. The music is written while they play, grown from nine thousand phrases of public-domain keyboard works, and no two pieces are alike. Each musician brings its own colours, hall and instrument; the keys sound under your fingers too.
