@@ -10,18 +10,22 @@ What survives that argument ends up here.
 TITLE: Hark
 META: android · v2.9.9
 URL: https://shumtugle.github.io/hark/
+FIBER: 1
+UPDATED: 2026-10-13
 ---
 A player for long recordings — lectures, audiobooks, talks. It opens a folder rather than a library, and keeps your position in every file separately. In 2.9.7 the home-screen widget was rebuilt as one piece: cover on the right, everything else sized around it instead of against a measured margin.
 ===
 TITLE: Meno
 META: android · v1.9.12
 URL: https://shumtugle.github.io/meno/
+FIBER: 2
 ---
 A glass card for the home screen: analog clock, time, date, weather, battery. Written as hand-authored smali, with no Android Studio and no Gradle anywhere in the build.
 ===
 TITLE: Jot
 META: android · v3.327.0
 URL: https://shumtugle.github.io/jot/
+FIBER: 3
 ---
 A small image editor that gets real work done.
 Jot is a compact Android editor for quick image work: draw, crop, add text and shapes, adjust colour, apply filters, remove parts of an image, combine pictures, and save the result.
@@ -29,53 +33,64 @@ Jot is a compact Android editor for quick image work: draw, crop, add text and s
 TITLE: Nixie
 META: android · browser
 URL: https://shumtugle.github.io/nixie/
+FIBER: 4
 ---
 A small Android browser, built with the platform and nothing else. Nixie draws pages with the Android System WebView and builds its own window around it: one bar, one button, and screens of its own for everything a browser keeps.
 ===
 TITLE: Saule
 META: android · browser
 URL: https://shumtugle.github.io/saule/
+FIBER: 5
 ---
 An Android browser that forgets by default and agrees to remember only where you say so, one site at a time.
 ===
 TITLE: Fama
 META: android · board of meetings
 URL: https://shumtugle.github.io/fama/
+FIBER: 6
 ---
 One board for meetings announced in many channels. Share a channel to Fama once, and whatever it announces stands on one board, by day and by hour, with the book and the place.
 ===
 TITLE: Hazna
 META: android · game
 URL: https://shumtugle.github.io/hazna/
+FIBER: 7
 ---
 A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
 ===
 TITLE: Scoorohot'78
 META: android · game · v1.2
 URL: https://shumtugle.github.io/scoorohot/
+FIBER: 8
 ---
 A retro racing game on a road that never ends and is never the same twice: seven countries, traffic both ways, forks, police, weather, night. Everything you see and hear is made by the game itself. A finger on the screen drives; slide to steer, drag down to brake.
 ===
 TITLE: Ellipse
 META: android · home screen · v2.19.0
 URL: https://shumtugle.github.io/ellipse/
+FIBER: 9
 ---
 A home screen for Android that is also a workshop: icons cut from wood, steel, silk and glass, ten clock faces, a wallpaper factory, and a status strip of its own. Built and rebuilt 213 times in two weeks, in conversation.
 ===
 TITLE: Clepsydra
 META: android · game · v1.01
 URL: https://shumtugle.github.io/clepsydra/
+FIBER: 10
 ---
 A round glass flask with a maze inside. Rain falls into the neck; turn the flask with one finger and let the water out of the bottom in one long pour. Every flask is a new maze, and some keep a trouble or two: bubbles to pop or to keep, pearls that open into flowers across the way, a float, a clock, snow, lava.
 ===
 TITLE: Cat Piano
 META: android · music · v1.04
 URL: https://shumtugle.github.io/catpiano/
+FIBER: 11
 ---
 A cat, a panda, a fox and a small dinosaur take turns at the keys. The music is written while they play, grown from nine thousand phrases of public-domain keyboard works, and no two pieces are alike. Each musician brings its own colours, hall and instrument; the keys sound under your fingers too.
 ===
 TITLE: Hora
 META: android · voice · v0.99.8
 URL: https://github.com/Shumtugle/hora
+FIBER: 12
+UPDATED: 2026-10-15
+FEATURED: yes
 ---
 A voice for the phone. Eight voices with faces of their own tell the time and the weather, read notifications into your earphones, and read books aloud: your own files, or public-domain libraries searched from inside the app, each with its cover. The voices live on the phone itself, not on a server.
