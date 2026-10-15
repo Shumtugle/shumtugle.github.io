@@ -87,7 +87,7 @@ FIBER: 11
 A cat, a panda, a fox and a small dinosaur take turns at the keys. The music is written while they play, grown from nine thousand phrases of public-domain keyboard works, and no two pieces are alike. Each musician brings its own colours, hall and instrument; the keys sound under your fingers too.
 ===
 TITLE: Hora
-META: android · voice · v0.99.8
+META: android · voice · v1.0.1
 URL: https://shumtugle.github.io/hora/
 SOURCE: https://github.com/Shumtugle/hora
 FIBER: 12
