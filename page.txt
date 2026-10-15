@@ -8,7 +8,7 @@ Vibecoding is the hobby: describe the thing, let the model write it, then argue 
 What survives that argument ends up here.
 ===
 TITLE: Hark
-META: android · v2.9.7
+META: android · v2.9.9
 URL: https://shumtugle.github.io/hark/
 ---
 A player for long recordings — lectures, audiobooks, talks. It opens a folder rather than a library, and keeps your position in every file separately. In 2.9.7 the home-screen widget was rebuilt as one piece: cover on the right, everything else sized around it instead of against a measured margin.
@@ -57,7 +57,7 @@ URL: https://shumtugle.github.io/scoorohot/
 A retro racing game on a road that never ends and is never the same twice: seven countries, traffic both ways, forks, police, weather, night. Everything you see and hear is made by the game itself. A finger on the screen drives; slide to steer, drag down to brake.
 ===
 TITLE: Ellipse
-META: android · home screen · v2.18.3
+META: android · home screen · v2.19.0
 URL: https://shumtugle.github.io/ellipse/
 ---
 A home screen for Android that is also a workshop: icons cut from wood, steel, silk and glass, ten clock faces, a wallpaper factory, and a status strip of its own. Built and rebuilt 213 times in two weeks, in conversation.
