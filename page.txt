@@ -87,14 +87,16 @@ FIBER: 11
 A cat, a panda, a fox and a small dinosaur take turns at the keys. The music is written while they play, grown from nine thousand phrases of public-domain keyboard works, and no two pieces are alike. Each musician brings its own colours, hall and instrument; the keys sound under your fingers too.
 ===
 TITLE: Hora
-META: android · voice · v1.0.1
+META: android · voice · v1.5.2
 URL: https://shumtugle.github.io/hora/
 SOURCE: https://github.com/Shumtugle/hora
 FIBER: 12
-UPDATED: 2026-10-15
+UPDATED: 2026-10-17
 FEATURED: yes
 ---
-A voice for the phone. Eight voices with faces of their own tell the time and the weather, read notifications into your earphones and read books aloud: your own files, or public-domain libraries searched from inside the app. Ask by buttons or by voice. Everything runs on the phone itself, not on a server.
+A voice for the phone. Eight voices, each with a face and a name, read books aloud: your own, or free classics taken from libraries inside the app. They read new messages into your own headphones, and never into a car or a speaker. Overnight, while the phone charges, any book can become an audiobook.
+
+Ask by typing or by voice. Hearing, the voices and the optional AI model all run on the phone, and nothing you say leaves it.
 ===
 TITLE: Pastille
 META: android · widget · v1.2
