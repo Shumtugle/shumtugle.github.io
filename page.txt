@@ -95,3 +95,13 @@ UPDATED: 2026-10-15
 FEATURED: yes
 ---
 A voice for the phone. Eight voices with faces of their own tell the time and the weather, read notifications into your earphones and read books aloud: your own files, or public-domain libraries searched from inside the app. Ask by buttons or by voice. Everything runs on the phone itself, not on a server.
+===
+TITLE: Pastille
+META: android · widget · v1.2
+URL: https://shumtugle.github.io/pastille/
+SOURCE: https://github.com/Shumtugle/pastille
+FIBER: 13
+UPDATED: 2026-10-17
+KIND: tool
+---
+Six phrases under your thumb: a line of glass on the home screen, and one tap puts a phrase on the clipboard. No window opens; the pill just floods with its colour for a moment.
