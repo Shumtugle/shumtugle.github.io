@@ -52,11 +52,13 @@ FIBER: 6
 One board for meetings announced in many channels. Share a channel to Fama once, and whatever it announces stands on one board, by day and by hour, with the book and the place.
 ===
 TITLE: Hazna
-META: android · game
+META: android · game · v1.2.1
 URL: https://shumtugle.github.io/hazna/
+SOURCE: https://github.com/Shumtugle/hazna
 FIBER: 7
+UPDATED: 2026-09-06
 ---
-A treasury puzzle: every gem into its own sack. Built end to end in conversation, without a line written by hand.
+A treasury puzzle: every gem into its own sack, and the sacks are cut to the count of the stones, so nothing fits by accident. Plays in the browser too. Built end to end in conversation, without a line written by hand.
 ===
 TITLE: Scoorohot'78
 META: android · game · v1.2
