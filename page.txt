@@ -52,13 +52,13 @@ FIBER: 6
 One board for meetings announced in many channels. Share a channel to Fama once, and whatever it announces stands on one board, by day and by hour, with the book and the place.
 ===
 TITLE: Hazna
-META: android · game · v1.2.1
+META: android · game · v2.0.0
 URL: https://shumtugle.github.io/hazna/
 SOURCE: https://github.com/Shumtugle/hazna
 FIBER: 7
-UPDATED: 2026-09-06
+UPDATED: 2026-10-17
 ---
-A treasury puzzle: every gem into its own sack, and the sacks are cut to the count of the stones, so nothing fits by accident. Plays in the browser too. Built end to end in conversation, without a line written by hand.
+A treasury puzzle: every gem into its own sack, and the sacks are cut to the count of the stones, so nothing fits by accident. Native since 2.0, with English inside and thirteen more languages as small files to download from the page. Plays in the browser too.
 ===
 TITLE: Scoorohot'78
 META: android · game · v1.2
@@ -109,3 +109,13 @@ UPDATED: 2026-10-17
 KIND: tool
 ---
 Six phrases under your thumb: a line of glass on the home screen, and one tap puts a phrase on the clipboard. No window opens; the pill just floods with its colour for a moment.
+===
+TITLE: Amalgam
+META: android · game · v1.3
+URL: https://shumtugle.github.io/amalgam/
+SOURCE: https://github.com/Shumtugle/amalgam
+FIBER: 14
+UPDATED: 2026-10-18
+KIND: toy
+---
+A slow puzzle about a crystal growing in a black liquid: look, pluck, sink, circle and cut, and the world answers in colour and sound instead of numbers. The water on its page is the game's own, running live.
