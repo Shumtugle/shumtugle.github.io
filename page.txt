@@ -31,23 +31,26 @@ A small image editor that gets real work done.
 Jot is a compact Android editor for quick image work: draw, crop, add text and shapes, adjust colour, apply filters, remove parts of an image, combine pictures, and save the result.
 ===
 TITLE: Nixie
-META: android · browser
+META: android · browser · v0.78.4
 URL: https://shumtugle.github.io/nixie/
 FIBER: 4
+UPDATED: 2026-09-21
 ---
 A small Android browser, built with the platform and nothing else. Nixie draws pages with the Android System WebView and builds its own window around it: one bar, one button, and screens of its own for everything a browser keeps.
 ===
 TITLE: Saule
-META: android · browser
+META: android · browser · v7.7.5
 URL: https://shumtugle.github.io/saule/
 FIBER: 5
+UPDATED: 2026-09-14
 ---
 An Android browser that forgets by default and agrees to remember only where you say so, one site at a time.
 ===
 TITLE: Fama
-META: android · board of meetings
+META: android · board of meetings · v0.3.5
 URL: https://shumtugle.github.io/fama/
 FIBER: 6
+UPDATED: 2026-10-07
 ---
 One board for meetings announced in many channels. Share a channel to Fama once, and whatever it announces stands on one board, by day and by hour, with the book and the place.
 ===
@@ -89,11 +92,11 @@ FIBER: 11
 A cat, a panda, a fox and a small dinosaur take turns at the keys. The music is written while they play, grown from nine thousand phrases of public-domain keyboard works, and no two pieces are alike. Each musician brings its own colours, hall and instrument; the keys sound under your fingers too.
 ===
 TITLE: Hora
-META: android · voice · v1.5.2
+META: android · voice · v1.5.3
 URL: https://shumtugle.github.io/hora/
 SOURCE: https://github.com/Shumtugle/hora
 FIBER: 12
-UPDATED: 2026-10-17
+UPDATED: 2026-10-18
 FEATURED: yes
 ---
 A voice for the phone. Eight voices, each with a face and a name, read books aloud: your own, or free classics taken from libraries inside the app. They read new messages into your own headphones, and never into a car or a speaker. Overnight, while the phone charges, any book can become an audiobook.
@@ -119,3 +122,13 @@ UPDATED: 2026-10-18
 KIND: toy
 ---
 A slow puzzle about a crystal growing in a black liquid: look, pluck, sink, circle and cut, and the world answers in colour and sound instead of numbers. The water on its page is the game's own, running live.
+===
+TITLE: Hopper
+META: android · game · v1.0
+URL: https://shumtugle.github.io/hopper/
+SOURCE: https://github.com/Shumtugle/hopper
+FIBER: 15
+UPDATED: 2026-10-19
+KIND: toy
+---
+A puzzle seen from inside a drop of quicksilver: bounce over a black liquid, under and onto floating floors of bismuth, past mirages that show you your own reflection. You choose where every bounce lands, and the levels never end.
