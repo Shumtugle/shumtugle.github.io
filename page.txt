@@ -124,11 +124,13 @@ KIND: toy
 A slow puzzle about a crystal growing in a black liquid: look, pluck, sink, circle and cut, and the world answers in colour and sound instead of numbers. The water on its page is the game's own, running live.
 ===
 TITLE: Hopper
-META: android · game · v1.0
+META: android · game · v1.7.1
 URL: https://shumtugle.github.io/hopper/
 SOURCE: https://github.com/Shumtugle/hopper
 FIBER: 15
-UPDATED: 2026-10-19
+UPDATED: 2026-10-20
 KIND: toy
 ---
-A puzzle seen from inside a drop of quicksilver: bounce over a black liquid, under and onto floating floors of bismuth, past mirages that show you your own reflection. You choose where every bounce lands, and the levels never end.
+A puzzle seen from inside a drop of quicksilver: the drop never stops bouncing, and all you choose is where the next bounce lands. Over a black liquid and onto floating floors of bismuth, past mirages and a lilac rival racing you to the gate.
+
+Every level won grows a piece of a world out of the dark, and the levels never end. The level on its page is the game's own, running live.
