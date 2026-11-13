@@ -134,3 +134,15 @@ KIND: toy
 A puzzle seen from inside a drop of quicksilver: the drop never stops bouncing, and all you choose is where the next bounce lands. Over a black liquid and onto floating floors of bismuth, past mirages and a lilac rival racing you to the gate.
 
 Every level won grows a piece of a world out of the dark, and the levels never end. The level on its page is the game's own, running live.
+===
+TITLE: hwt-machine
+META: watch · faces
+URL: https://shumtugle.github.io/hwt-machine/
+SOURCE: https://github.com/Shumtugle/hwt-machine
+FIBER: 16
+UPDATED: 2026-11-13
+KIND: tool
+---
+Watch faces for a 408×480 band, written as short descriptions and built by a small machine that draws every bitmap, packs the file and checks it by drawing it back. Ten faces, each in English, Russian and Finnish.
+
+Every face runs live on its page: move the battery, steps, pulse and weather and watch it answer. No releases; each face is a file to download.
