@@ -7,6 +7,15 @@ Vibecoding is the hobby: describe the thing, let the model write it, then argue 
 
 What survives that argument ends up here.
 ===
+TITLE: Bookbinder
+META: android · v0.8.1
+URL: https://https://shumtugle.github.io/bookbinder/
+FIBER: 17
+UPDATED: 2026-11-15
+---
+A simple audiobook player for Android: a book is a folder of sound files, its chapters in the order their numbers say. The place in a chapter: a wide strip that raises a drum of five-second ticks, exact near the finger, quick further off.
+The shelf: the book opened last on top, a wide bar of the whole book cut into chapters.
+===
 TITLE: Hark
 META: android · v2.9.9
 URL: https://shumtugle.github.io/hark/
