@@ -9,7 +9,7 @@ What survives that argument ends up here.
 ===
 TITLE: Bookbinder
 META: android · v0.8.1
-URL: https://https://shumtugle.github.io/bookbinder/
+URL: https://shumtugle.github.io/bookbinder/
 FIBER: 17
 UPDATED: 2026-11-15
 ---
